@@ -34,7 +34,7 @@ def genderBreakdown(moviedf):
 
 
 columns_to_use = np.append(np.arange(0, 400), 474)
-movies = pd.read_csv("movieReplicationSet.csv", usecols=columns_to_use)
+movies = pd.read_csv("../movieReplicationSet.csv", usecols=columns_to_use)
 genderNum = genderBreakdown(movies)
 moviesRateDiffGender = []
 didNotWatchGender = []

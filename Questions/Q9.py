@@ -3,7 +3,7 @@ from scipy.stats import ks_2samp
 import matplotlib.pyplot as plt
 
 
-movies = pd.read_csv("movieReplicationSet.csv", usecols=["Home Alone (1990)", "Finding Nemo (2003)"])
+movies = pd.read_csv("../movieReplicationSet.csv", usecols=["Home Alone (1990)", "Finding Nemo (2003)"])
 homeAlone = movies["Home Alone (1990)"].dropna()
 findingNemo = movies["Finding Nemo (2003)"].dropna()
 homeAlonePdf = homeAlone.value_counts(normalize=True).sort_index()

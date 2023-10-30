@@ -3,7 +3,7 @@ from scipy.stats import mannwhitneyu
 import matplotlib.pyplot as plt
 
 
-movies = pd.read_csv("movieReplicationSet.csv")
+movies = pd.read_csv("../movieReplicationSet.csv")
 
 shrek_on_gender = movies[["Shrek (2001)", "Gender identity (1 = female; 2 = male; 3 = self-described)"]]
 shrek_on_gender = shrek_on_gender[shrek_on_gender["Gender identity (1 = female; 2 = male; 3 = self-described)"] != 3]
